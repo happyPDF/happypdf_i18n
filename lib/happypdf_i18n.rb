@@ -1,0 +1,1 @@
+require 'happypdf_i18n/railtie'

@@ -1,0 +1,505 @@
+en:
+  activerecord:
+    attributes:
+      account:
+        name: Name
+        created_at: Created at
+      image:
+        file: Filename
+        created_at: Created at
+      block:
+        custom_field_value: Value
+        custom_fields: Custom fields
+        description: Description
+        font: Font
+        info: Block info
+        name: Name
+        type: Type
+        size: Height x Width
+      pdt:
+        description: Description
+        name: Name
+        author: Author
+        title: Title
+        pdf_filename: PDF filename
+      pdf:
+        file: File
+        created_at: Created at
+      font:
+        file: File
+        created_at: Created at
+      user:
+        api_key: API Key
+        created_at: Created at
+        email: Email
+        is_admin: Cool Admin
+        password: Password
+        updated_at: Updated at
+        language: Language
+      membership:
+        created_at: Created at
+      dataset:
+        name: Name
+        raw_data: Raw data
+        updated_at: Updated at
+        created_at: Created at
+    errors:
+      models:
+        account:
+          must_be_member: The new owner must be an account member
+      full_messages:
+        format: ! '%{attribute} %{message}'
+      messages:
+        not_an_image: is not an image
+        wrong_size: is the wrong size (should be %{file_size})
+        size_too_small: is too small (should be at least %{file_size})
+        size_too_big: is too big (should be at most %{file_size})
+        exists: already exists
+        accepted: must be accepted
+        blank: can't be blank
+        confirmation: doesn't match confirmation
+        empty: can't be empty
+        equal_to: must be equal to %{count}
+        even: must be even
+        exclusion: is reserved
+        greater_than: must be greater than %{count}
+        greater_than_or_equal_to: must be greater than or equal to %{count}
+        inclusion: is not included in the list
+        invalid: is invalid
+        less_than: must be less than %{count}
+        less_than_or_equal_to: must be less than or equal to %{count}
+        not_a_number: is not a number
+        not_an_integer: must be an integer
+        odd: must be odd
+        record_invalid: ! 'Validation failed: %{errors}'
+        taken: has already been taken
+        too_long:
+          one: is too long (maximum is 1 character)
+          other: is too long (maximum is %{count} characters)
+        too_short:
+          one: is too short (minimum is 1 character)
+          other: is too short (minimum is %{count} characters)
+        wrong_length:
+          one: is the wrong length (should be 1 character)
+          other: is the wrong length (should be %{count} characters)
+      template:
+        body: ! 'There were problems with the following fields:'
+        header:
+          one: 1 error prohibited this %{model} from being saved
+          other: ! '%{count} errors prohibited this %{model} from being saved'
+    models:
+      dataset:
+        one: Dataset
+        other: Datasets
+      image:
+        one: Image
+        other: Images
+      account:
+        one: Account
+        other: Accounts
+      membership:
+        one: Account Member
+        other: Account Members
+      pdt:
+        one: Template
+        other: Templates
+      pdf:
+        one: PDF
+        other: PDF's
+      font:
+        one: Font
+        other: Fonts
+      user:
+        one: User
+        other: Users
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: ! '%Y-%m-%d'
+      long: ! '%B %d, %Y'
+      short: ! '%b %d'
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: about 1 hour
+        other: about %{count} hours
+      about_x_months:
+        one: about 1 month
+        other: about %{count} months
+      about_x_years:
+        one: about 1 year
+        other: about %{count} years
+      almost_x_years:
+        one: almost 1 year
+        other: almost %{count} years
+      half_a_minute: half a minute
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
+      less_than_x_seconds:
+        one: less than 1 second
+        other: less than %{count} seconds
+      over_x_years:
+        one: over 1 year
+        other: over %{count} years
+      x_days:
+        one: 1 day
+        other: ! '%{count} days'
+      x_minutes:
+        one: 1 minute
+        other: ! '%{count} minutes'
+      x_months:
+        one: 1 month
+        other: ! '%{count} months'
+      x_seconds:
+        one: 1 second
+        other: ! '%{count} seconds'
+    prompts:
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: must be accepted
+      blank: can't be blank
+      confirmation: doesn't match confirmation
+      empty: can't be empty
+      equal_to: must be equal to %{count}
+      even: must be even
+      exclusion: is reserved
+      greater_than: must be greater than %{count}
+      greater_than_or_equal_to: must be greater than or equal to %{count}
+      inclusion: is not included in the list
+      invalid: is invalid
+      less_than: must be less than %{count}
+      less_than_or_equal_to: must be less than or equal to %{count}
+      not_a_number: is not a number
+      not_an_integer: must be an integer
+      odd: must be odd
+      record_invalid: ! 'Validation failed: %{errors}'
+      taken: has already been taken
+      too_long:
+        one: is too long (maximum is 1 character)
+        other: is too long (maximum is %{count} characters)
+      too_short:
+        one: is too short (minimum is 1 character)
+        other: is too short (minimum is %{count} characters)
+      wrong_length:
+        one: is the wrong length (should be 1 character)
+        other: is the wrong length (should be %{count} characters)
+    template:
+      body: ! 'There were problems with the following fields:'
+      header:
+        one: 1 error prohibited this %{model} from being saved
+        other: ! '%{count} errors prohibited this %{model} from being saved'
+  flash:
+    update_success: The object has been updated.
+    update_error: Could not update the object.
+    destroy_error: Could not delete the object.
+    destroy_success: The object has been deleted.
+    file_missing_error: <h4>The underlying pdf-file could not be read.</h4> %{error}
+  languages:
+    de: Deutsch
+    en: English
+    pl: Polski
+  form:
+    back_to_list: Back to list
+    confirm_delete: Realy delete this object?
+    forgot_pass: Forgot Password?
+    refresh: Refresh
+    save: Save
+    signin: Login
+    signout: Logout
+    signup: Sign up
+    upload: Upload
+    upload_js: Please enable JavaScript to use file uploader
+    signup_new_account: Register a new account
+    confirm: Confirm
+  help:
+    downloads: Downloads
+    downloads_info: ! '<p>3 steps to PDF</p>
+
+      <ol>
+
+      <li>Install the Block-Plugin in Acrobat & put Blocks(Data-Placeholders) into
+      your PDF</li>
+
+      <li>Upload the PDF and test it in our online form</li>
+
+      <li>Embed the PDF API call into your web service</li>
+
+      </ol>
+
+      <p>Here is the Block-Plugin Download, for Adobe Acrobat(Pro Version). Use it
+      to add blocks(placeholders) to a PDF.</p>'
+    getting_started: Getting started
+  helpers:
+    select:
+      prompt: Please select
+    submit:
+      create: Create %{model}
+      submit: Save %{model}
+      update: Update %{model}
+  hp:
+    access_denied: Sorry babe, you don't seem to be an admin .. Ask your local happyPDF
+      dealer for a ticket.
+    copy_ext: -copy
+    or: or
+    batch_destroy_success: ! '%{count} %{obj} have been deleted.'
+    headline_confirm_batch_destroy: Really delete those objects?
+    confirm_batch_destroy: ! '%{count} %{obj} will be deleted forever. Are you really
+      really sure?'
+    'no': 'No'
+    'yes': 'Yes'
+    no_sure: NO, I need to think about it.
+    yes_sure: YES sure
+    menu:
+      assets: Assets
+  link:
+    cancel: Cancel
+    close: Close
+    copy: Copy
+    destroy: Delete
+    edit: Edit
+    show: Show
+    download: Download
+    sort_by: Sort by
+  number:
+    currency:
+      format:
+        delimiter: ! ','
+        format: ! '%u%n'
+        precision: 2
+        separator: .
+        significant: false
+        strip_insignificant_zeros: false
+        unit: $
+    format:
+      delimiter: ! ','
+      precision: 3
+      separator: .
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  pdts:
+    edit: Edit PDF Template
+    new: New PDF Template
+    new_info: Start by uploading a PDF. You can customize and edit it afterwards.
+    page_no: Page %{number}
+    preview: Preview
+    request_url: Request Url
+    request_url_info: This is the url with the request params.
+    test_form: Test It
+    test_form_info: Generate a PDF
+    author_info: Author for new PDF's
+    pdf_defaults: Defaults for new PDF's
+    pdf_defaults_info: ! 'You can override those defaults for each PDF creation, when
+      using our API. '
+    pdf_filename_help: ! 'Use %placeholders to simplify file naming. We support date-time
+      placeholders(see Ruby strftime): %y %Y %m %d, %H %M %S and you can use your
+      data names e.g: You have a data-field: number => %number_cert_%Y-%m-%d.pdf  =
+      12_cert_2012-03-08.pdf'
+    pdf_filename_info: filename for new PDF
+    title_info: Title for the PDF
+    choose_dataset: Choose a dataset
+    dataset_info: Typing is lame, use datasets
+    save_dataset: Save dataset
+    copy: Copy template
+  sessions:
+    new: Ready to get happy? Come on in
+  support:
+    array:
+      last_word_connector: ! ', and '
+      two_words_connector: ! ' and '
+      words_connector: ! ', '
+    select:
+      prompt: Please select
+  system:
+    404_info: Did you deleted the record or are you trying to sniff on other peoples?
+    404_title: Object could not be found - 404
+  time:
+    am: am
+    formats:
+      default: ! '%a, %d %b %Y %H:%M:%S %z'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%m.%d.%Y - %H:%m'
+    pm: pm
+  users:
+    profile: My Profile
+    edit: Edit User
+    invite_code: Invite code
+    invite_code_missing: You need a proper invite code to signup
+    new: Register a new user
+    new_api_key: Reset this API key
+    new_api_token: Create a new API token
+    new_pass_error: The new password could not be set.
+    new_password: New password
+    pass_confirm: Current password
+    pass_confirm_info: Supply your password to confirm any changes above.
+    supply_pass_confirm_error: Please supply your current password.
+    account: My Account
+    account_settings: Account Settings
+    bad_email_or_password: Must be a valid email address. Password can't be blank.
+  fonts:
+    new: Upload new fonts
+    new_info: ! 'We like .ttf or .otf font files and happily check them for unicode-compatibilty. '
+    license_info: ! 'By uploading fonts you confirm to NOT commit any copyright infringement.
+      Meaning: you have bought a license or you are using a free font. In each case
+      READ the f** license(RTFL) and tripple check. If we encounter any copyright
+      claims we will block your account IMMIDIATELY and hand out your contact information.  ...  <strong>And
+      we''ll tell your parents </strong>'
+    license_info_head: ! '!! Warning !!'
+    preview: Preview
+  accounts:
+    confirm_delete: ! "Deleting this account will FOREVER KILL ALL associated data(templates,
+      pdf, credits,..). \n\nAre you serious?"
+    edit: Edit Account
+    new: New Account
+    info: All data(Templates, PDF) belongs to an account, and accounts are separate
+      for billing purposes. An account has one owner, and can have additional people
+      as members.
+    owner: Owner
+    list: My Accounts
+    switch: Switch to
+    billing: Billing & Usage
+    usage: Usage
+    billing_info: You can purchase updates here
+  memberships:
+    new: Add Member
+    confirm_delete: This will remove the member permanently from this account and
+      all his data will be assigned to the account owner.
+    new_user: Add a new user
+    new_user_info: The email you gave us did not reveal any registered user. You can
+      create a new user below and he will be added as an account member.
+    user_added: The User can now access this account.
+    user_not_found: ! 'User not found. Please create him first.  '
+  passwords:
+    new: Reset your password
+    create: Password reset - Email on the Way
+    create_info: You will receive an email within the next few minutes. It contains
+      instructions for changing your password.
+    edit: Change your Password
+    edit_info: Please insert your new password below. Your new passwort is set after
+      form submission.
+    reset_submit: Reset password
+    new_info: We will email you a link to reset your password.
+    unknown_email: Sorry, we don't know this email.
+    forbidden: Please double check the URL or try submitting the form again
+    blank_password: Password can't be blank.
+    reset: Reset your password
+    reset_info: We will email you a link to reset your password.
+    mail_subject: happyPDF - Password reset link
+    mail_body: ! 'Someone, hopefully you, has requested that we send you a link to
+      change your password.
+
+
+      Here''s the link:
+
+
+      %{reset_link}
+
+
+      If you didn''t request this, ignore this email. Don''t worry. Your password
+      hasn''t been changed.
+
+
+      Your happyPDF Team
+
+'
+  images:
+    new: Add images
+    info: Store often used images here, to simplify PDF creation. Instead of uploading
+      the same image for each new PDF(via API), just refer to the image using it's  filename
+      or id. SAVE the Planet, prevent Traffic!
+    new_info: <strong>We like JPG, TIFF, GIF and PNG's, with a maximum file size of
+      4MB and NO special chars in filename!!! </strong><br/>Image placeholders(on
+      templates) have settings for clipping, shrinking, etc, so images are always
+      shown .. somehow. For best results, images should match the size of the fitbox
+      and a have resolution of 300DPI. Keep in mind that big images will also blow
+      up your PDF, so take your time and optimize your files.
+  datasets:
+    edit: Edit dataset
+    name_info: give it a name, to identify the data
+    info: Dataset's are saved on PDF creation. Re-used it for new PDF's by it's name
+      or ID(via API) and only submit fields that differ.

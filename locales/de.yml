@@ -1,0 +1,496 @@
+de:
+  activerecord:
+    attributes:
+      block:
+        custom_field_value: Wert
+        custom_fields: Customfields
+        description: Beschreibung
+        font: Font
+        info: Block info
+        name: Name
+        type: Typ
+        size: Höhe x Breite
+      pdt:
+        description: Beschreibung
+        name: Name
+        author: Author
+        pdf_filename: PDF Dateiname
+        title: Titel
+      user:
+        api_key: API Key
+        created_at: Erstellt
+        email: Email
+        is_admin: Cooler Admin
+        password: Passwort
+        updated_at: Bearbeitet
+        language: Sprache
+      font:
+        created_at: Erstellt
+        file: Datei
+      pdf:
+        created_at: Erstellt
+        file: Datei
+      account:
+        created_at: Erstellt
+        name: Name
+      membership:
+        created_at: Erstellt
+      image:
+        created_at: Erstellt
+        file: Dateiname
+      dataset:
+        created_at: Erstellt
+        name: Name
+        raw_data: Rohdaten
+        updated_at: Geändert
+    errors:
+      full_messages:
+        format: ! '%{attribute} %{message}'
+      messages:
+        accepted: muss akzeptiert werden
+        blank: muss ausgefüllt werden
+        confirmation: stimmt nicht mit der Bestätigung überein
+        empty: muss ausgefüllt werden
+        equal_to: muss genau %{count} sein
+        even: muss gerade sein
+        exclusion: ist nicht verfügbar
+        greater_than: muss größer als %{count} sein
+        greater_than_or_equal_to: muss größer oder gleich %{count} sein
+        inclusion: ist kein gültiger Wert
+        invalid: ist nicht gültig
+        less_than: muss kleiner als %{count} sein
+        less_than_or_equal_to: muss kleiner oder gleich %{count} sein
+        not_a_number: ist keine Zahl
+        not_an_integer: muss ganzzahlig sein
+        odd: muss ungerade sein
+        record_invalid: ! 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
+        taken: ist bereits vergeben
+        too_long: ist zu lang (nicht mehr als %{count} Zeichen)
+        too_short: ist zu kurz (nicht weniger als %{count} Zeichen)
+        wrong_length: hat die falsche Länge (muss genau %{count} Zeichen haben)
+        exists: existiert schon
+        size_too_big: ist zu groß (sollte maximal %{file_size} sein)
+        size_too_small: ist zu klein (sollte min. %{file_size} haben)
+        wrong_size: hat die falsche Größe (sollte %{file_size} sein)
+        not_an_image: ist kein Bild
+      template:
+        body: ! 'Bitte überprüfen Sie die folgenden Felder:'
+        header:
+          one: ! 'Konnte %{model} nicht speichern: ein Fehler.'
+          other: ! 'Konnte %{model} nicht speichern: %{count} Fehler.'
+      models:
+        account:
+          must_be_member: Der neue Eigentümer muss Account Mitarbeiter sein.
+    models:
+      pdt:
+        one: Vorlage
+        other: Vorlagen
+      user:
+        one: User
+        other: Users
+      font: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+        one: Schrift
+        other: Schriften
+      pdf: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+        one: PDF
+        other: PDF's
+      account: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+        one: Account
+        other: Accounts
+      membership: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+        one: Mitarbeiter
+        other: Mitarbeiter
+      image: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+        one: Bild
+        other: Bilder
+      dataset: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+        one: Datensatz
+        other: Datensätze
+  date:
+    abbr_day_names:
+    - So
+    - Mo
+    - Di
+    - Mi
+    - Do
+    - Fr
+    - Sa
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mär
+    - Apr
+    - Mai
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Okt
+    - Nov
+    - Dez
+    day_names:
+    - Sonntag
+    - Montag
+    - Dienstag
+    - Mittwoch
+    - Donnerstag
+    - Freitag
+    - Samstag
+    formats:
+      default: ! '%d.%m.%Y'
+      long: ! '%e. %B %Y'
+      short: ! '%e. %b'
+    month_names:
+    - 
+    - Januar
+    - Februar
+    - März
+    - April
+    - Mai
+    - Juni
+    - Juli
+    - August
+    - September
+    - Oktober
+    - November
+    - Dezember
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: etwa eine Stunde
+        other: etwa %{count} Stunden
+      about_x_months:
+        one: etwa ein Monat
+        other: etwa %{count} Monate
+      about_x_years:
+        one: etwa ein Jahr
+        other: etwa %{count} Jahre
+      almost_x_years:
+        one: fast ein Jahr
+        other: fast %{count} Jahre
+      half_a_minute: eine halbe Minute
+      less_than_x_minutes:
+        one: weniger als eine Minute
+        other: weniger als %{count} Minuten
+      less_than_x_seconds:
+        one: weniger als eine Sekunde
+        other: weniger als %{count} Sekunden
+      over_x_years:
+        one: mehr als ein Jahr
+        other: mehr als %{count} Jahre
+      x_days:
+        one: ein Tag
+        other: ! '%{count} Tage'
+      x_minutes:
+        one: eine Minute
+        other: ! '%{count} Minuten'
+      x_months:
+        one: ein Monat
+        other: ! '%{count} Monate'
+      x_seconds:
+        one: eine Sekunde
+        other: ! '%{count} Sekunden'
+    prompts:
+      day: Tag
+      hour: Stunden
+      minute: Minuten
+      month: Monat
+      second: Sekunden
+      year: Jahr
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: muss akzeptiert werden
+      blank: muss ausgefüllt werden
+      confirmation: stimmt nicht mit der Bestätigung überein
+      empty: muss ausgefüllt werden
+      equal_to: muss genau %{count} sein
+      even: muss gerade sein
+      exclusion: ist nicht verfügbar
+      greater_than: muss größer als %{count} sein
+      greater_than_or_equal_to: muss größer oder gleich %{count} sein
+      inclusion: ist kein gültiger Wert
+      invalid: ist nicht gültig
+      less_than: muss kleiner als %{count} sein
+      less_than_or_equal_to: muss kleiner oder gleich %{count} sein
+      not_a_number: ist keine Zahl
+      not_an_integer: muss ganzzahlig sein
+      odd: muss ungerade sein
+      record_invalid: ! 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
+      taken: ist bereits vergeben
+      too_long: ist zu lang (nicht mehr als %{count} Zeichen)
+      too_short: ist zu kurz (nicht weniger als %{count} Zeichen)
+      wrong_length: hat die falsche Länge (muss genau %{count} Zeichen haben)
+    template:
+      body: ! 'Bitte überprüfen Sie die folgenden Felder:'
+      header:
+        one: ! 'Konnte %{model} nicht speichern: ein Fehler.'
+        other: ! 'Konnte %{model} nicht speichern: %{count} Fehler.'
+  flash:
+    destroy_error: Das Objekt konnte nicht gelöscht werden!
+    destroy_success: Das Objekt wurde gelöscht.
+    file_missing_error: <h4>Die PDF Datei konnte nicht gelesen werden</h4> %{error}
+    update_success: Das Objekt wurde aktualisiert.
+    update_error: Das Objekt konnte nicht geändert werden.
+  languages:
+    de: Deutsch
+    en: English
+    pl: Polski
+  form:
+    back_to_list: zurück zur Liste
+    confirm_delete: Soll das Objekt wirklich gelöscht werden?
+    forgot_pass: Passwort vergessen?
+    refresh: Aktualisieren
+    save: Speichern
+    signin: Login
+    signout: Abmelden
+    signup: Anmelden
+    upload: Upload
+    upload_js: Bitte lasse Sie Javascript für den Uploader zu.
+    signup_new_account: Einen neuen Account anlegen
+    confirm: Bestätigen
+  help:
+    downloads: Downloads
+    downloads_info: ! '<p>In 3 Schritten zum PDF</p>
+
+      <ol>
+
+      <li>Installiere den Plugin in Acrobat & ballere Blöcke(Datenplatzhalter) in
+      dein PDF</li>
+
+      <li>Lade das PDF als Vorlage hoch und teste es in unserem online formular</li>
+
+      <li>Binde den PDF API Aufruf in deinen Webservice ein</li>
+
+      </ol>
+
+      <p>Folgend der Block-Plugin Download, für Adobe Acrobat(die Pro Version), mit
+      welchem die Blöcke im PDF erstellt und bearbeitet.</p>'
+    getting_started: Los gehts
+  helpers:
+    select:
+      prompt: Bitte wählen
+    submit:
+      create: ! '%{model} erstellen'
+      submit: ! '%{model} speichern'
+      update: ! '%{model} aktualisieren'
+  hp:
+    access_denied: ! 'Mit den Schuhen, kommst du hier nicht rein .. vielleicht hat
+      dein happyPDF Dealer noch ein Paar Admin-Boots. '
+    copy_ext: -kopie
+    or: oder
+    'no': Nein
+    'yes': Ja
+    confirm_batch_destroy: ! '%{count} %{obj} werden unwiederbringlich gelöscht. Willst
+      du das wirklich?'
+    no_sure: NEIN, ich denke nochmal nach
+    yes_sure: JA sicher
+    batch_destroy_success: ! '%{count} %{obj} wurden gelöscht.'
+    headline_confirm_batch_destroy: Wirklich löschen?
+    menu:
+      assets: Assets
+  link:
+    cancel: Abbrechen
+    close: Schliessen
+    copy: Kopieren
+    destroy: Löschen
+    edit: Bearbeiten
+    show: Anzeigen
+    download: Download
+    sort_by: Sortieren
+  number:
+    currency:
+      format:
+        delimiter: .
+        format: ! '%n %u'
+        precision: 2
+        separator: ! ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: €
+    format:
+      delimiter: .
+      precision: 2
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion:
+            one: Milliarde
+            other: Milliarden
+          million: Millionen
+          quadrillion:
+            one: Billiarde
+            other: Billiarden
+          thousand: Tausend
+          trillion: Billionen
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  pdts:
+    edit: PDF Vorlage bearbeiten
+    new: neue PDF Vorlage
+    new_info: Laden Sie zuerst ein PDF hoch. Danach können Sie es erweitert bearbeiten.
+    page_no: Seite %{number}
+    preview: Vorschau
+    request_url: Request Url
+    request_url_info: So sieht eine Url mit dem Parametern aus .. Copy&Paste, du weist
+      schon
+    test_form: Testen
+    test_form_info: PDF generieren
+    author_info: Author für neue PDF's
+    pdf_defaults: Vorgaben für neue PDF's
+    pdf_defaults_info: Diese Vorgaben können für jedes neue PDF, bei Nutzung der API,
+      überschrieben werden.
+    pdf_filename_help: ! '%platzhalter erleichtern die Datei-Bennung. Wir unterstützen
+      Datums-Platzhalter(siehe Ruby strftime): %y %Y %m %d, %H %M %S und du kannst
+      Datenfeldnamen benutzen z.B: Du hast in Datenfeld: nummer => %nummer_cert_%Y-%m-%d.pdf  =
+      12_cert_2012-03-08.pdf'
+    pdf_filename_info: Dateiname für neue PDF
+    title_info: Titel des PDF
+    choose_dataset: Datensatz benutzen
+    dataset_info: Tippen nervt, nutze Datensätze
+    save_dataset: Datensatz speichern
+    copy: Vorlage kopieren
+  sessions:
+    new: Herein, wenn's kein Schneider ist!
+  support:
+    array:
+      last_word_connector: ! ' und '
+      two_words_connector: ! ' und '
+      words_connector: ! ', '
+    select:
+      prompt: ! 'Bitte wählen:'
+  system:
+    404_info: Haben Sie den gesuchten Datensatz vielleicht gelöscht? Oder wird hier
+      ein wenig rumgeschnüffelt?
+    404_title: Das Objekt konnte nicht gefunden werden - 404
+  time:
+    am: vormittags
+    formats:
+      default: ! '%A, %d. %B %Y, %H:%M Uhr'
+      long: ! '%A, %d. %B %Y, %H:%M Uhr'
+      short: ! '%d.%m.%Y - %H:%m'
+    pm: nachmittags
+  users:
+    profile: Mein Profil
+    edit: Edit user
+    invite_code: Einladungs-Code
+    invite_code_missing: Sorry, du brauchst einen Einladungscode zum Anmelden
+    new: Als neuer User registrieren
+    new_api_key: API Key erneuern
+    new_api_token: API Token erneuern
+    new_pass_error: Das neue Passwort konnte nicht gespeichert werden.
+    new_password: Neues Passwort
+    pass_confirm: aktuelles Passwort
+    pass_confirm_info: Das aktuelle Password wird für alle Änderungen benötigt.
+    supply_pass_confirm_error: ! 'Dein aktuelles Passwort fehlt oder war fehlerhaft.
+      Wenn alle Stricke reißen: Den Passwort-vergessen-Link gibt es auf der Login
+      Seite.'
+    bad_email_or_password: Du brauchst eine gültige Email und ein Passwort.
+  fonts:
+    new: Neue Schriften hochballern
+    new_info: ! 'Wir mögen .ttf und .otf Fonts und prüfen ob die Font unicode-fähig
+      ist.  '
+    license_info: Mit dem Hochladen von Schriften erkärst du keine Copyright Verletzungen
+      zu begehen. D.h du hast die Schrift entweder gekauft, oder benutzt eine freie
+      Schrift. In jedem Fall musst du die Lizenz LESEN und es dreifach prüfen. Wenn
+      wir eine Copyright Beschwerde erhalten wird dein Account SOFORT gesperrt und
+      deine Kontaktdaten herausgegeben. ... <strong>Und wir sagen es deinen Eltern</strong>
+    license_info_head: ! '!! Warnung !!'
+    preview: Vorschau
+  accounts:
+    edit: Account bearbeiten
+    new: Neuer Account
+    owner: Inhaber
+    list: Meine Accounts
+    switch: Wechsel zu
+    confirm_delete: ! 'Das Löschen des Accounts löscht unwiederuflich ALLE enthaltenen
+      Daten(Vorlagen,PDF''s, Guthaben,..)
+
+
+      Weist du was du tust?'
+    billing: Abrechnung & Verbrauch
+    usage: Nutzung
+    billing_info: Hier können Sie Ihren Account aufladen
+    info: Sämtliche Daten(PDF, Vorlagen,..) gehören zu einem Account, der separat
+      abgerechnet wird. Ein Account hat einen Eigentümer und kann mehrere Mitarbeiter
+      haben.
+  memberships:
+    new: Neuer Mitarbeiter
+    confirm_delete: Der Mitarbeiter wird permanent aus dem Account entfernt. Seine
+      Daten werden an den Account Inhaber übertragen.
+    new_user: Neuen Mitarbeiter anlegen
+    new_user_info: Wir konnten keinen User mit dieser Emailadresse finden. Du kannst
+      deshalb einen neuen Benutzer anlegen und er wird dem Account als Mitarbeiter
+      hinzugefügt.
+    user_added: Der User ist nun Mitarbeiter in diesem Account.
+    user_not_found: Der User konnte nicht gefunden werden. Bitte lege ihn vorher an.
+  passwords:
+    new: Password zurücksetzen
+    reset_submit: Passwort zurücksetzen
+    new_info: Wir schicken dir einen Link mit dem das Passwort zurückgesetzt werden
+      kann.
+    unknown_email: Sorry, diese Email kennen wir lieder nciht.
+    reset: Password zurücksetzen
+    reset_info: Wir schicken dir einen Link mit dem das Passwort zurückgesetzt werden
+      kann.
+    blank_password: Passwort muss gesetzt werden.
+    edit: Passwort ändern
+    edit_info: Bitte füge unten dein neues Passwort ein. Erst nach dem Speichern ist
+      es gesetzt.
+    forbidden: Die URL wurde nicht gefunden. Bitte überprüfe den Link.
+    create: Die Passwort-Email ist auf dem Weg
+    create_info: Bitte schaue in dein Email-Postfach, dort findest du in Kürze die
+      Email mit den Infos zum Password-Zurücksetzen.
+    mail_body: ! "Du hast einen Passwort-Vergessen Link auf happyPDF.com angefragt.
+      \n\nHier ist der Link:\n\n%{reset_link}\n\nSollte jemand anderes diese Anrage
+      gestellt haben, kein Problem, denn dein Passwort wurde noch nicht geändert.\n\nDein
+      happyPDF Team"
+    mail_subject: happyPDF - Passwort zurücksetzen
+  images:
+    new: Neue Bilder rein-dengeln
+    info: Oft genutzte Bilder sollten hier gespeichert werden, um die PDF-Erstellung
+      zu vereinfachen. Bei der Erstellung(über die API) verweist du einfach auf ein
+      bestehendes Bild(per ID oder Dateiname), anstatt es jedesmal neu hochzuladen.
+      SAVE the Planet, prevent Traffic!
+    new_info: ! '<strong>Verwende JPG, TIFF, GIF oder PNG''s, mit einer maximal Größe
+      von 4MB und OHNE Sonderzeichen im Namen!!! </strong><br/>
+
+      Die Bild-Platzhalter(in der Vorlage) haben Einstellungen zum skalieren, abschneiden,
+      etc, somit werden Bilder immer angezeigt. Für optimale Druckergebnisse sollten
+      Bilder 300 DPI und die Größe des Platzhalter haben. Die Bildgröße bläst natürlich
+      auch das PDF auf, nimm dir also Zeit für die Bildoptimierung.'
+  datasets:
+    edit: Datensatz bearbeiten
+    name_info: mit einem Namen kann der Datensatz leichter gefunden werden.
+    info: Datensätze werden bei der PDF-Erstellung gespeichert. Für neue PDF's kannst
+      du den Datensatz (mit Name oder ID) angeben und nur noch die Felder übermitteln
+      die sich unterscheiden.
